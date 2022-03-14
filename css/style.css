@@ -1,0 +1,63 @@
+body{
+    background-color: antiquewhite;
+}
+.container{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slides-box{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+}
+.slide:nth-child(1){
+    left: 0;
+}
+.slide:nth-child(2){
+    left: 100%;
+}
+.slide:nth-child(3){
+    left: 200%;
+}
+.slide:nth-child(4){
+    left: 300%;
+}
+.slide:nth-child(5){
+    left: 400%;
+}
+.slide:nth-child(6){
+    left: 500%;
+}
+
+.btn-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.prev{
+    position: absolute;
+    left: -5px;
+}
+.next{
+    position: absolute;
+    right:-5px;
+}
+
+.prev:hover,
+.next:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
